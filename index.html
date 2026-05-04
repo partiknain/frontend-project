@@ -20,8 +20,11 @@
     </header>
     <section class="hero">
         <h2>Hello I`m Partik</h2>
-        <p>Btech computer engineering student</p>
-        <a href="#about" class="btn">view my work</a>
+        <p>Frontend Developer | JavaScript Learner</p>
+        <p>I build responsive and user-friendly websites</p>
+        <a href="#projects" class="btn">view my projects</a>
+        <a href="resume.pdf" class="button" download>download resume</a>
+        <button id="toggle">🌙 Dark Mode</button>
     </section>
     <section class="about">
     <h3>About Me</h3>
@@ -36,36 +39,59 @@
          <div class="skill">c++</div>
         </div>
     </section>
-     <section id="projects" class="section">
-        <h3>Projects</h3>
-        <div class="projects-container">
+    <section id="projects" class="section">
+  <h3>Projects</h3>
 
-            <div class="project-card">
-                <h3>Portfolio Website</h3>
-                <div>Personal portfolio website using HTML & CSS.</div>
-            </div>
+  <div class="projects-container">
 
-            <div class="project-card">
-                <h3>Amazon Clone</h3>
-                <div>Homepage UI inspired by Amazon.</div>
-            </div>
+    <!-- Project 1 -->
+    <div class="project-card">
+      <img src="amazon.png" class="project-card-img">
+      <h3>Amazon Clone</h3>
+      <div>Responsive e-commerce homepage.</div>
+      <a href="http://127.0.0.1:5501/amazon-clone/index.html" target="_blank">Live Demo</a>
+      <a href="https://github.com/partiknain/amazon-clone.git" target="_blank">GitHub</a>
+    </div>
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="weather.png" class="project-card-img">
+      <h3>Weather App</h3>
+      <div>Weather app using API.</div>
+      <a href="#">Live Demo</a>
+      <a href="#">GitHub</a>
+    </div>
 
-            <div class="project-card">
-                <h3>Blog UI</h3>
-                <div>Responsive blog layout design.</div>
-            </div>
+    <!-- Project 3 -->
+    <div class="project-card">
+      <img  src="portofolio.png" class="project-card-img" >
+      <h3>Portfolio</h3>
+      <div>My personal portfolio website.</div>
+      <a href="http://127.0.0.1:5500/frontend-project/index.html" target="_blank">Live Demo</a>
+      <a href="https://github.com/partiknain/frontend-project.git" target="_blank">GitHub</a>
+    </div>
 
-        </div>
-    </section>
-    <section class="section">
+  </div>
+</section>
+    <section class="section" id="contact">
         <h3>Contact</h3>
         <div class="contact-info">
             <div>Email: pnain359@gmail.com</div>
             <div>Phone: +91 9518256133</div>
         </div>
+        <div class="contact-links">
+    <a href="https://github.com/partiknain" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/partik-nain-87aab5385" target="_blank">LinkedIn</a>
+  </div>
     </section>
     <footer>
     <div>&copy; 2024 Partik. All rights reserved.</div>
     </footer>
+    <script>
+  const btn = document.getElementById("toggle");
+
+  btn.onclick = () => {
+    document.body.classList.toggle("dark");
+  };
+</script>
 </body>
 </html>
