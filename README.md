@@ -11,6 +11,7 @@ This is my personal portfolio website created using **HTML** and **CSS**. It rep
 ##  Technologies Used
 - HTML5
 - CSS3
+- javascript
 
 ## 📂 Project Structure
 ```
